@@ -1,0 +1,81 @@
+cpptest
+------------------------------------------
+CppTest is a portable and powerful, yet simple, unit testing framework 
+for handling automated tests in C++. The focus lies on usability and 
+extendability. Several output formats, including simple text output, 
+compiler-like output and HTML, are supported and new ones are easily 
+added.
+
+Runtime requirements:
+  cygwin-1.7.0-44
+  libgcc1-4.3.2-2
+  libstdc++6-4.3.2-2
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.63-10
+  automake1.10-1.10.1-10
+  binutils-20080624-2
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  gcc4-g++-4.3.2-2
+  libtool-2.2.7a-1
+  make-3.81-2
+  sed-4.1.5-2
+
+Canonical website:
+  http://cpptest.sourceforge.net/
+
+Canonical download:
+  http://downloads.sourceforge.net/cpptest/
+
+-------------------------------------------
+
+Build instructions:
+  unpack cpptest-1.1.0-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./cpptest-1.1.0-X.cygport all
+
+This will create:
+  /usr/src/cpptest-1.1.0-X-src.tar.bz2
+  /usr/src/cpptest-1.1.0-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/cygcpptest-0.dll
+  /usr/include/cpptest-assert.h
+  /usr/include/cpptest-collectoroutput.h
+  /usr/include/cpptest-compileroutput.h
+  /usr/include/cpptest-htmloutput.h
+  /usr/include/cpptest-output.h
+  /usr/include/cpptest-source.h
+  /usr/include/cpptest-suite.h
+  /usr/include/cpptest-textoutput.h
+  /usr/include/cpptest-time.h
+  /usr/include/cpptest.h
+  /usr/lib/libcpptest.a
+  /usr/lib/libcpptest.dll.a
+  /usr/lib/libcpptest.la
+  /usr/lib/pkgconfig/libcpptest.pc
+  /usr/share/doc/cpptest/AUTHORS
+  /usr/share/doc/cpptest/BUGS
+  /usr/share/doc/cpptest/COPYING
+  /usr/share/doc/cpptest/ChangeLog
+  /usr/share/doc/cpptest/NEWS
+  /usr/share/doc/cpptest/README
+
+------------------
+
+Port Notes:
+
+----- version 1.1.0-1 -----
+Initial release for Cygwin 1.7.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/

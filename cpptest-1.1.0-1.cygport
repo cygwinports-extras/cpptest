@@ -1,0 +1,11 @@
+DESCRIPTION="C++ test framework"
+HOMEPAGE="http://cpptest.sourceforge.net/"
+SRC_URI="mirror://sourceforge/cpptest/${P}.tar.gz"
+PATCH_URI="1.1.0-no-undefined.patch"
+
+DIFF_EXCLUDES="Doxyfile libcpptest.pc"
+
+src_test() {
+	cd ${B}/test
+	./mytest
+}

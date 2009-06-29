@@ -1,5 +1,5 @@
 category: Devel
-requires: cygwin libgcc1 libstdc++6
+requires: libgcc1 libstdc++6
 sdesc: "C++ unit testing framework"
 ldesc: "CppTest is a portable and powerful, yet simple, unit testing 
 framework for handling automated tests in C++. The focus lies on 

@@ -1,0 +1,20 @@
+NAME="cpptest"
+VERSION=1.1.2
+RELEASE=1
+CATEGORY="Devel"
+SUMMARY="C++ unit testing framework"
+DESCRIPTION="CppTest is a portable and powerful, yet simple, unit testing
+framework for handling automated tests in C++. The focus lies on usability
+and extendability. Several output formats, including simple text output,
+compiler-like output and HTML, are supported and new ones are easily added."
+HOMEPAGE="http://cpptest.sourceforge.net/"
+SRC_URI="mirror://sourceforge/cpptest/${P}.tar.gz"
+PATCH_URI="1.1.0-no-undefined.patch"
+
+DIFF_EXCLUDES="Doxyfile libcpptest.pc"
+
+src_test() {
+	cd ${B}/test
+	PATH="${B}/src/.libs:$PATH" \
+	./mytest
+}
